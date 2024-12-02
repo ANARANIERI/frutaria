@@ -1,0 +1,26 @@
+# Mensagem de boas-vindas
+print("Bom dia! Sejam bem-vindos à nossa frutaria!")
+print("Temos uma grande variedade de frutas fresquinhas para você hoje!\n")
+
+# Dicionário com frutas e seus preços
+frutas = {
+    "Maçã": 2.50,
+    "Banana": 1.20,
+    "Laranja": 1.80,
+    "Manga": 3.50,
+    "Abacaxi": 5.00,
+    "Melancia": 7.00,
+    "Uva": 4.00,
+    "Pera": 3.00,
+    "Mamão": 4.50,
+    "Morango": 6.00
+}
+
+# Exibindo as frutas e seus preços
+print("Frutas disponíveis hoje:")
+for fruta, preco in frutas.items():
+    print(f"- {fruta}: R$ {preco:.2f} por unidade")
+
+# Mensagem final
+print("\nEscolha suas frutas favoritas e aproveite!")
+print("Obrigado por visitar nossa frutaria. Estamos sempre à disposição!")
