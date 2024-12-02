@@ -1,0 +1,47 @@
+# Mensagem de boas-vindas
+print("Bom dia! Sejam bem-vindos à nossa frutaria!")
+print("Aqui estão as frutas disponíveis e seus preços:\n")
+
+# Dicionário com frutas e seus preços
+frutas = {
+    "Maçã": 2.50,
+    "Banana": 1.20,
+    "Laranja": 1.80,
+    "Manga": 3.50,
+    "Abacaxi": 5.00,
+    "Melancia": 7.00,
+    "Uva": 4.00,
+    "Pera": 3.00,
+    "Mamão": 4.50,
+    "Morango": 6.00
+}
+
+# Exibindo as frutas e preços
+for fruta, preco in frutas.items():
+    print(f"- {fruta}: R$ {preco:.2f} por unidade")
+
+# Cesta de compras
+cesta = {}
+total = 0
+
+# Interação com o cliente
+while True:
+    fruta_escolhida = input("\nQual fruta você deseja adicionar à sua cesta (ou digite 'sair' para finalizar)? ").capitalize()
+
+    if fruta_escolhida == "Sair":
+        break
+    elif fruta_escolhida in frutas:
+        quantidade = int(input(f"Quantas unidades de {fruta_escolhida} você deseja? "))
+        cesta[fruta_escolhida] = quantidade
+        total += frutas[fruta_escolhida] * quantidade
+        print(f"{quantidade} unidade(s) de {fruta_escolhida} adicionada(s) à sua cesta.")
+    else:
+        print("Desculpe, essa fruta não está disponível. Tente outra.")
+
+# Exibindo a cesta de compras e o total
+print("\nSua cesta de compras:")
+for fruta, quantidade in cesta.items():
+    print(f"{quantidade} unidade(s) de {fruta} - R$ {frutas[fruta] * quantidade:.2f}")
+
+print(f"\nTotal da sua compra: R$ {total:.2f}")
+print("Obrigado por comprar em nossa frutaria! Volte sempre!")
