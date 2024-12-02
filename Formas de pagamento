@@ -1,0 +1,28 @@
+# Solicita o valor da compra
+valor = float(input("Digite o valor da compra:   R$ "))
+
+# Exibe as opções de pagamento
+print("\nEscolha a forma de pagamento:  ")
+print("1 - Dinheiro (10% de desconto)")
+print("2 - Cartão (sem desconto)")
+print("3 - Pix (5% de desconto)")
+
+# Solicita a opção do usuário
+opcao = int(input("\nDigite o número da opção escolhida:   "))
+
+# Calcula o valor final com base na opção escolhida
+if opcao == 1:  
+    valor_final = valor * 0.9  # 10% de desconto
+    print(f"\nForma de pagamento:   Dinheiro. Valor com desconto:   R$ {valor_final:.2f}")
+elif opcao == 2:  
+    parcelas = int(input("Digite o número de parcelas (1 para à vista ou 2+ para parcelado):   "))
+    if parcelas == 1:  
+        print(f"\nForma de pagamento:   Cartão à vista. Valor total:   R$ {valor:.2f}")
+    else:  
+        valor_parcela = valor / parcelas
+        print(f"\nForma de pagamento:   Cartão parcelado. {parcelas}x de R$ {valor_parcela:.2f}. Valor total:   R$ {valor:.2f}")
+elif opcao == 3:  
+    valor_final = valor * 0.95  # 5% de desconto
+    print(f"\nForma de pagamento:   Pix. Valor com desconto:   R$ {valor_final:.2f}")
+else:  
+    print("\nOpção inválida. Tente novamente.")
