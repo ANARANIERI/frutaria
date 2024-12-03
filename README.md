@@ -14,5 +14,5 @@ porta de sua casa. Abaixo está algumas das principais funcionalidades de uma fr
   CRONOGRAMA DE DESENVOLVIMENTO DO PROJETO
   No primeiro dia começei fazer o código das boas vindas e temos uma grande variedade de frutas que exibe todas as frutas diponíveis e seus respectivos preços.
   No segundo dia realizei como vai ser feito as formas de pagamentos sendo no dinheiro, cartão ou  pix.
-  No terceiro dia fiz a cesta de compras 
+  No terceiro dia fiz a cesta de compras que vai ter todas as variedades de frutas dai você seleciona qual vai querer coloca na cesta e dai vai te dar o valor 
   
