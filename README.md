@@ -1,4 +1,4 @@
-Olá sejam muito bem-vindos a nossa frutaria online e aproveite as nossas variedades de frutas.
+# Olá sejam muito bem-vindos a nossa frutaria online e aproveite as nossas variedades de frutas.
 
 # OBJETIVO DO PROJETO
 
